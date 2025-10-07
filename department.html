@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departments - New Satara College</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align:center;
+  background: linear-gradient(90deg, #004080, #0073e6);
+}
+
+header img {
+  width:100%;
+  max-height:230px;
+  object-fit:cover;
+  border-bottom:4px solid #0073e6;
+}
+
+/* NAVBAR */
+nav {
+  background:#0066cc;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:10px;
+}
+
+nav a {
+  color:#fff;
+  text-decoration:none;
+  padding:12px 20px;
+  display:block;
+  transition:0.3s;
+  font-weight:500;
+}
+
+nav a:hover { background:#4cb4f6; border-radius:5px; }
+
+/* MAIN CONTENT */
+.container {
+  margin:30px auto;
+  width:90%;
+  max-width:1000px;
+}
+
+h2 {
+  text-align:center;
+  color:#004080;
+  margin-bottom:25px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+/* DEPARTMENT SECTIONS */
+.department {
+  display:flex;
+  align-items:center;
+  margin-bottom:25px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.department:hover {
+  transform: translateY(-5px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.department img {
+  width:250px;
+  height:150px;
+  object-fit:cover;
+}
+
+.department-info {
+  padding:15px 20px;
+}
+
+.department-info h3 {
+  color:#004080;
+  margin-bottom:10px;
+}
+
+.department-info h3 a {
+  color:#0073e6;
+  text-decoration:none;
+}
+
+.department-info h3 a:hover {
+  text-decoration:underline;
+}
+
+.department-info p {
+  font-size:14px;
+  line-height:1.5;
+  color:#333;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg,#0073e6,#004080);
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:15px;
+  letter-spacing:1px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .department { flex-direction:column; }
+  .department img { width:100%; height:auto; }
+  nav a { text-align:center; padding:10px; }
+}
+
+@media(max-width:480px){
+  footer { font-size:13px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0047.jpg" alt="New Satara College">
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="admission.html">Admission</a>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="T&P.html">Placement</a>
+  <a href="alumni.html">Alumni</a>
+  <a href="student.html">Student's Corner</a>
+  <a href="department.html">Department</a>
+</nav>
+
+<div class="container">
+  <h2>Departments</h2>
+
+  <div class="department">
+    <img src="C:\Users\admin\Pictures\tech-jobs-in-India--5--4.webp" alt="Computer Engineering">
+    <div class="department-info">
+      <h3><a href="vm.html">CO – Computer Engineering</a></h3>
+      <p>
+        Focuses on software development, system design, and computer networks. Prepares students
+        for careers in programming, cybersecurity, AI, and data science.
+      </p>
+    </div>
+  </div>
+
+  <div class="department">
+    <img src="images/if.jpg" alt="Information Technology">
+    <div class="department-info">
+      <h3>IF – Information Technology</h3>
+      <p>
+        Covers networking, databases, web technologies, and IT services. Graduates excel in software support,
+        cloud computing, and infrastructure management.
+      </p>
+    </div>
+  </div>
+
+  <div class="department">
+    <img src="images/me.jpg" alt="Mechanical Engineering">
+    <div class="department-info">
+      <h3>ME – Mechanical Engineering</h3>
+      <p>
+        Teaches mechanics, thermodynamics, and manufacturing systems. Ideal for careers in automotive,
+        aerospace, energy, and design engineering.
+      </p>
+    </div>
+  </div>
+
+  <div class="department">
+    <img src="images/ci.jpg" alt="Civil Engineering">
+    <div class="department-info">
+      <h3>CI – Civil Engineering</h3>
+      <p>
+        Focuses on infrastructure projects like buildings, roads, and bridges. Includes structural design,
+        materials, surveying, and construction management.
+      </p>
+    </div>
+  </div>
+
+  <div class="department">
+    <img src="images/entc.jpg" alt="Electronics and Telecommunication">
+    <div class="department-info">
+      <h3>ENTC – Electronics and Telecommunication</h3>
+      <p>
+        Combines electronics, communication systems, embedded tech, and digital signal processing. Prepares
+        students for work in telecom, IoT, and circuit design.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 New Satara College | Department of Engineering
+</footer>
+
+</body>
+</html>

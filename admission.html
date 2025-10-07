@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission - New Satara College</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f5f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      border-bottom: 4px solid #0073e6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0066cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background: #4cb4f6;
+      border-radius: 5px;
+    }
+
+    /* HAMBURGER MENU */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* FORM CONTAINER */
+    .container {
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #004080;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #0073e6;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(90deg, #0073e6, #004080);
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(90deg, #0073e6, #004080);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #005bb5;
+        text-align: center;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      input, select, textarea {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      footer {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0047.jpg" alt="New Satara College" />
+  </header>
+
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="T&P.html">Placement</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="student.html">Student's Corner</a>
+      <a href="department.html">Department</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Admission Form</h2>
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Choose Course--</option>
+        <option value="B.Sc. Computer Science">B.Sc. Computer Science</option>
+        <option value="B.Com">B.Com</option>
+        <option value="B.A. English">B.A. English</option>
+        <option value="M.Com">M.Com</option>
+        <option value="M.Sc. Computer Applications">M.Sc. Computer Applications</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <input type="submit" value="Submit Application">
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 New Satara College | All Rights Reserved
+  </footer>
+
+  <script>
+    // 🔹 Mobile Menu Toggle
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

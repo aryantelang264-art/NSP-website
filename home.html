@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Satara College - Home</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f5f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      position: relative;
+      text-align: center;
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      border-bottom: 4px solid #0073e6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0066cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background: #4cb4f6;
+      border-radius: 5px;
+    }
+
+    /* HAMBURGER MENU */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .highlight-text {
+      color: #000407;
+      font-weight: bold;
+      margin: 15px 0;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(90deg, #0073e6, #004080);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #005bb5;
+        text-align: center;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .highlight-text {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      footer {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0047.jpg" alt="New Satara College" />
+  </header>
+
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="T&P.html">Placement</a>
+      <a href="alumni.html">Alumni</a>
+      <a href="student.html">Student's Corner</a>
+      <a href="department.html">Department</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Welcome to New Satara College</h2>
+
+    <p class="highlight-text">
+      New Satara College of Engineering and Management (Polytechnic) was established in 2010.
+    </p>
+    <p class="highlight-text">
+      To meet the needs of modern India, the institute provides quality technical education with highly qualified faculty.
+    </p>
+    <p class="highlight-text">
+      It has a well-equipped modern library, effective teaching-learning process, and supportive facilities for student growth.
+    </p>
+    <p class="highlight-text">
+      Located 9 km from Pandharpur in Korti village near the Mahadev temple, the college is surrounded by a lush green environment with hostels, buses, and a large playground.
+    </p>
+    <p class="highlight-text">
+      The mission of the college is to advance knowledge and excellence in the field of higher education.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 New Satara College | All Rights Reserved
+  </footer>
+
+  <script>
+    // 🔹 Mobile Menu Toggle
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

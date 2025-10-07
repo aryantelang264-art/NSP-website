@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - New Satara College</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align:center;
+  background: linear-gradient(90deg, #004080, #0073e6);
+}
+
+header img {
+  width:100%;
+  max-height:230px;
+  object-fit:cover;
+  border-bottom:4px solid #0073e6;
+}
+
+/* NAVBAR */
+nav {
+  background:#0066cc;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:10px;
+}
+
+nav a {
+  color:#fff;
+  text-decoration:none;
+  padding:12px 20px;
+  display:block;
+  transition:0.3s;
+  font-weight:500;
+}
+
+nav a:hover { background:#4cb4f6; border-radius:5px; }
+
+/* CONTAINER */
+.container {
+  margin:30px auto;
+  width:90%;
+  max-width:1000px;
+}
+
+h2 {
+  text-align:center;
+  color:#004080;
+  margin-bottom:25px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+/* GALLERY GRID */
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:15px;
+}
+
+.gallery img {
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg,#0073e6,#004080);
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-size:15px;
+  letter-spacing:1px;
+  margin-top:40px;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width:768px){
+  nav a { padding:10px; text-align:center; }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0047.jpg" alt="New Satara College">
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="admission.html">Admission</a>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="T&P.html">Placement</a>
+  <a href="alumni.html">Alumni</a>
+  <a href="student.html">Student's Corner</a>
+  <a href="department.html">Department</a>
+</nav>
+
+<div class="container">
+  <h2>Campus Gallery</h2>
+  <div class="gallery">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0051.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0038.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0050.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0049.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0048.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0045.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0040.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0035.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0023.jpg" alt="college">
+    <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0025.jpg" alt="college">
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 New Satara College | All Rights Reserved
+</footer>
+
+</body>
+</html>

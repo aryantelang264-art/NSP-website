@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni - New Satara College</title>
+     <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f5f8ff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      max-height: 230px;
+      object-fit: cover;
+      border-bottom: 4px solid #0073e6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #0066cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: block;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      background: #4cb4f6;
+      border-radius: 5px;
+    }
+
+    /* HAMBURGER MENU */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* FORM CONTAINER */
+    .container {
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #004080;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #0073e6;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background: linear-gradient(90deg, #004080, #0073e6);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(90deg, #0073e6, #004080);
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(90deg, #0073e6, #004080);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #005bb5;
+        text-align: center;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      input, select, textarea {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      footer {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        
+      <img src="C:\Users\admin\Pictures\Saved Pictures\IMG-20250824-WA0047.jpg" alt="college" width="1500" height="150">
+    </header>
+
+    <nav>
+     <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+       
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="T&P.html">Placement</a>
+	<a href="alumni.html">Alumni</a>
+	<a href="student.html">Student's Corner</a>
+	<a href="department.html">Department</a>
+
+
+</nav>
+
+    <div class="container">
+        <h2>Alumni Network</h2>
+        <p style="text-align: center;">
+            Our alumni are our pride. They carry the legacy of New Satara College across the globe in various industries and roles.
+            Here are a few of our distinguished alumni making us proud.
+        </p>
+
+        <div class="alumni-list">
+            <!-- Alumni 1 -->
+            <div class="alumni-card">
+                <img src="images/alumni1.jpg" alt="Alumni 1">
+                <h4>Aarav Deshmukh</h4>
+                <p>Software Engineer, Google<br>B.E. Computer Engineering (2018)</p>
+            </div>
+
+            <!-- Alumni 2 -->
+            <div class="alumni-card">
+                <img src="images/alumni2.jpg" alt="Alumni 2">
+                <h4>Riya Kulkarni</h4>
+                <p>Project Manager, Infosys<br>B.E. IT (2016)</p>
+            </div>
+
+            <!-- Alumni 3 -->
+            <div class="alumni-card">
+                <img src="images/alumni3.jpg" alt="Alumni 3">
+                <h4>Sachin Patil</h4>
+                <p>Civil Engineer, L&T Constructions<br>B.E. Civil (2015)</p>
+            </div>
+
+            <!-- Alumni 4 -->
+            <div class="alumni-card">
+                <img src="images/alumni4.jpg" alt="Alumni 4">
+                <h4>Megha Sharma</h4>
+                <p>Embedded Systems Engineer, TCS<br>B.E. ENTC (2017)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 New Satara College | Alumni Network
+    </footer>
+
+</body>
+</html>
